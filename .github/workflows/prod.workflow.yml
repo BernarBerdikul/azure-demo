@@ -3,12 +3,13 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-steps:
+  steps:
 - name: Checkout GitHub Actions
-      uses: actions/checkout@main
+    uses: actions/checkout@main
 - name: Login via Azure CLI
       uses: azure/login@v1
       with:
