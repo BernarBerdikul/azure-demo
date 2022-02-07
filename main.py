@@ -11,9 +11,14 @@ port = os.getenv("PORT")
 app = FastAPI()
 
 
-@app.get("/")
-def index():
+@app.get("/v1/")
+def index_v1():
     return {"data": "Application ran successfully - FastAPI"}
+
+
+@app.get("/v2/")
+def index_v2():
+    return {"data": "Application ran successfully - FastAPI release v2.0"}
 
 
 if __name__ == "__main__":
