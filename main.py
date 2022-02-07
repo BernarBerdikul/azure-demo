@@ -18,7 +18,7 @@ def index_v1():
 
 @app.get("/v2/")
 def index_v2():
-    return {"data": "Application ran successfully - FastAPI release v2.0"}
+    return {"data": "Application ran successfully - FastAPI release v2.2"}
 
 
 if __name__ == "__main__":
