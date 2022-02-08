@@ -13,8 +13,8 @@ jobs:
       - name: Login via Azure CLI
         uses: azure/login@v1
         with:
+            azcliversion: 2.29.2
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-            enable-AzPSSession: true
       - name: Login to Azure Container Registry
         uses: azure/docker-login@v1
         with:
