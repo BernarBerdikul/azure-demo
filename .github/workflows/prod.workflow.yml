@@ -14,6 +14,7 @@ jobs:
         uses: azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
+            enable-AzPSSession: true
       - name: Login to Azure Container Registry
         uses: azure/docker-login@v1
         with:
