@@ -16,9 +16,9 @@ def index_v1():
     return {"data": "Application ran successfully - FastAPI"}
 
 
-@app.get("/v2/")
-def index_v2():
-    return {"data": "Application ran successfully - FastAPI release v2.2"}
+@app.get("/v3/")
+def index_v3():
+    return {"data": "Application ran successfully - FastAPI release v3.0"}
 
 
 if __name__ == "__main__":
